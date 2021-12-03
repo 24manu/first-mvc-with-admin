@@ -68,8 +68,9 @@ if (isset($_GET['idsection']) && ctype_digit($_GET['idsection']) && !empty($_GET
 
     /*
     EXERCICE
-    
     */
+    //appel de la vue (temporaire)
+    include_once '../view/publicView/userView.php';
 
 
 
