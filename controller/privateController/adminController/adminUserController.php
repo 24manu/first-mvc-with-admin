@@ -1,7 +1,10 @@
 <?php
 
+echo 
+var_dump($_GET);
+
 /*
-Si on veut supprimer un auteur (cruD)
+Si on veut supprimer un utilisateur (cruD)
 */
 if (
     isset($_GET['delete']) &&
@@ -11,12 +14,7 @@ if (
 
     $iduser = (int) $_GET['delete'];
 
-    /*
-
-ON EST ICI
-
-
-    */
+ 
 
     // sélection de l'utilisateur
     $user = theuserSelectOneById($dbConnect, $iduser);
@@ -25,10 +23,32 @@ ON EST ICI
     require_once "../view/adminView/usersDeleteAdminView.php";
 
     /*
-Sinon on veut afficher tous les auteurs
+Création d'un utilisateur
 */
-} else {
+} 
+
+elseif (
+    isset($_GET['create'])
+) {
+require_once "../view/adminView/usersCreateAdminView.php";
+}
+
+    /*
+Update d'un utilisateur
+*/
+
+
+elseif (
+    isset($_GET['update']) &&
+    ctype_digit($_GET['update']) &&
+    !empty($_GET['update'])
+) {
+    require_once "../view/adminView/usersUpdateAdminView.php";
+    }
+
+else {
     $recupUsers = theuserWithRightSelectAll($dbConnect);
     // appel de la vue (cRud)
     require_once "../view/adminView/usersAdminView.php";
 }
+
