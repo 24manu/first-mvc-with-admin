@@ -66,7 +66,7 @@
                         <form action="" name="connexion" method="POST">
                             <div class="form-group">
                                 <label>Nom </label>
-                                <input type="text" name="theuserLogin" minlength="6" maxlength="120" class="form-control" required>
+                                <input type="text" name="theuserName" minlength="6" maxlength="120" class="form-control" required>
                             </div>
 
                             <div class="form-group">
@@ -76,34 +76,34 @@
 
                             <div class="form-group">
                                 <label>Mot de passe </label>
-                                <input type="text" name="theuserLogin" minlength="4" maxlength="50" class="form-control" required>
+                                <input type="text" name="theuserPwd" minlength="4" maxlength="50" class="form-control" required>
                             </div>
 
                             <div class="form-group">
                                 <label>Vérification du mot de passe </label>
-                                <input type="text" name="theuserLogin" minlength="4" maxlength="50" class="form-control" required>
+                                <input type="text" name="theuserPwd" minlength="4" maxlength="50" class="form-control" required>
                             </div>
 
                             <div class="form-group">
                                 <label>Permissions : </label><br>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="thearticleStatus" id="inlineRadio1" value="0">
+                                    <input class="form-check-input" type="radio" name="theright_idtheright" id="inlineRadio1" value="0">
                                     <label class="form-check-label" for="inlineRadio1">0 => Utilisateur</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="thearticleStatus" id="inlineRadio2" value="1" checked>
+                                    <input class="form-check-input" type="radio" name="theright_idtheright" id="inlineRadio2" value="1" checked>
                                     <label class="form-check-label" for="inlineRadio2">1 => Rédacteur</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="thearticleStatus" id="inlineRadio3" value="2">
+                                    <input class="form-check-input" type="radio" name="theright_idtheright" id="inlineRadio3" value="2">
                                     <label class="form-check-label" for="inlineRadio3">2 => Modérateur</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="thearticleStatus" id="inlineRadio4" value="3">
+                                    <input class="form-check-input" type="radio" name="theright_idtheright" id="inlineRadio4" value="3">
                                     <label class="form-check-label" for="inlineRadio4">3 => Administrateur</label>
                                 </div>
 
-                           <button type="submit" class="btn btn-primary">Créer</button>
+                                <button type="submit" class="btn btn-primary">Créer</button>
                         </form>
                     </div>
                     <hr>
