@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="?p=article">Gestion des articles</a>
+                        <a class="nav-link active" href="?p=article">Gestion des articles</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?p=user">Gestion des utilisateurs</a>
@@ -111,6 +111,10 @@
                                     endforeach;
                                     ?>
                                 </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Date : </label><br>
+                                <input type="datetime-local" name="thearticleDate" class="form-control" value="<?= date("Y-m-d\TH:i", strtotime($article["thearticleDate"])) ?>" required>
                             </div>
                             <div class="form-group">
                                 <label>Rubriques : </label><br>
